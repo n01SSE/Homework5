@@ -405,7 +405,7 @@ max-width: 496px;
     border: 1px solid #8E8F99;
         border-radius: 4px;
 
-        transition: border var(--transition-hover),fill var(--transition-hover),border var(--transition-hover),border-radius var(--transition-hover); 
+        transition: border var(--transition-hover),border-radius var(--transition-hover); 
 }
 
 .partners-link:hover,
@@ -416,6 +416,7 @@ max-width: 496px;
 
 .partners-icon {
     fill: #8e8f99;
+    transition: fill var(--transition-hover) ;
 }
 
 .partners-link:hover > .partners-icon,
@@ -603,6 +604,11 @@ margin-bottom: 72px;
 .photo-item:hover .hover-text,
 .photo-item:focus .hover-text{
     transform: translate(0);
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
+}
+
+.photo-item:hover,
+.photo-item:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
